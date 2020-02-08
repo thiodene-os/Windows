@@ -11,4 +11,5 @@ https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-7.5.2-windows
 C:\Users\ayiss\Documents\Software\elasticsearch-7.5.2\bin
 - Copy this link to Environment Variables PATH
 - Close the PROMPT window and reopen it to try ES
-- type elasticsearch on PROMPT to verify it works
+- type elasticsearch on PROMPT to verify it works on this url:
+http://localhost:9200
