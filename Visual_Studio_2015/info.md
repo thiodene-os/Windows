@@ -7,3 +7,6 @@ Visual C++ Redistributable for Visual Studio 2015
 
 ## Check the Download pictures provided to see the steps
 vs2015_1.jpg, vs2015_2.jpg
+
+## Now start the App:
+vc_redist.x64.exe
