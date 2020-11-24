@@ -9,32 +9,8 @@ composer require elasticsearch/elasticsearch
 ## Create a PHP file using ES Client:
 Next, let’s create a new php file that we will use for testing and with the following code so that we can use the Elasticsearch client.
 
-<?php
-require 'vendor/autoload.php';
-
-$client = new Elasticsearch\Client();
-
-//echo $_SERVER["DOCUMENT_ROOT"];
-
 require '../../../../vendor/autoload.php';
-
-//$client = new Elasticsearch\Client();
-
 
 use Elasticsearch\ClientBuilder;
 $client = ClientBuilder::create()->setHosts(['127.0.0.1:9200'])->build();
 
-
-$params = array();
-$params['body']  = array(
-  'name' => 'Ash Ketchum',
-  'age' => 10,
-  'badges' => 8
-);
-
-$params['index'] = 'pokemon';
-$params['type']  = 'pokemon_trainer';
-
-$result = $client->index($params);
-
-?>
